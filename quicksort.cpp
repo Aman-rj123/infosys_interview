@@ -17,13 +17,13 @@ int partation(int arr[], int s, int e)
     int i = s;
     int j = e;
     // check left and right side
-    while (i <pivotindex && j > pivotindex)
+    while (i < pivotindex && j > pivotindex)
     {
         while (arr[i] <= arr[pivotindex])
         {
             i++;
         }
-        while(arr[j] >= arr[pivotindex])
+        while (arr[j] >= arr[pivotindex])
         {
             j--;
         }
@@ -68,7 +68,7 @@ void print(int arr[], int n)
 int main()
 {
 
-    int arr[8] = {3, 1, 2, 7, 5,11,9,11};
+    int arr[8] = {3, 1, 2, 7, 5, 11, 9, 11};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "original array" << endl;
     print(arr, n);
