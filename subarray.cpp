@@ -1,5 +1,5 @@
-//Calculate the sum of every contiguous subarray of size k
-
+// //Calculate the  maximum sum of every contiguous subarray of size k
+//maximum sum 
 #include <iostream>
 using namespace std;
 int main()
