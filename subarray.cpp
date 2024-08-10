@@ -12,7 +12,7 @@ int main()
     {
         sum = sum + arr[i];
     }
-    int maxsum = 0;
+    int maxsum = sum;
     int i = 0;
     int j = k;
     while (j < n)
