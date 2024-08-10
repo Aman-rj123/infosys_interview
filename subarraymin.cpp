@@ -1,3 +1,5 @@
+
+//min of the subarray with value k=3;
 #include <iostream>
 
 using namespace std;
@@ -21,7 +23,7 @@ int minsubarray(int arr[], int k, int n)
         minsum = min(minsum, sum);
     }
 
-   // cout<<minsum;
+    // cout<<minsum;
 
     return minsum;
 }
@@ -31,11 +33,9 @@ int main()
     int n = 7;
     int arr[n] = {1, 2, 3, 4, 5, 6, 7};
     int k = 3;
-   int min1_sum= minsubarray(arr, k, n);
+    int min1_sum = minsubarray(arr, k, n);
 
-   cout<<"the min subarray sum is "<<min1_sum<<endl;
-
-
+    cout << "the min subarray sum is " << min1_sum << endl;
 
     // for (int i = 0; i < n; i++)
     // {
