@@ -2,10 +2,10 @@
 using namespace std;
 #include <bits/stdc++.h>
 
-int unioneoftwoarray(int arr1[], int arr2[], int n, int m)
+vector<int> unioneoftwoarray(int arr1[], int arr2[], int n, int m)
 {
     set<int> s;
-    
+    vector<int>v;
     int count = 0;
     for (int i = 0; i < n; i++)
     {
@@ -18,9 +18,9 @@ int unioneoftwoarray(int arr1[], int arr2[], int n, int m)
     }
     for (auto it : s)
     {
-        count++;
+       v.push_back(it);
     }
-    return count;
+    return v;
 }
 
 int main()
@@ -30,7 +30,9 @@ int main()
     int arr1[n] = {1, 2, 3, 4, 5};
     int arr2[m] = {3, 4, 5, 7, 8};
 
-   int lenght= unioneoftwoarray(arr1, arr2, n, m);
-  cout<<"the length of the union of the two array is :"<<lenght<<endl;
+  vector<int>v=  unioneoftwoarray(arr1, arr2, n, m);
+   for(int i=0;i<v.size();i++){
+    cout<<v[i]<<" ";
+   }
     return 0;
 }
