@@ -57,7 +57,7 @@ vector<int> merger_sort(vector<int> &arr)
 int main()
 {
 
-    vector<int> arr = {2, 1, 5, 3, 4, 7, 6};
+    vector<int> arr = {2, 1, 5, 3, 4, 7, 6,10,9};
 
     vector<int> answer = merger_sort(arr);
 
