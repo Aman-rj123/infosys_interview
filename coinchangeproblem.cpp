@@ -20,7 +20,7 @@ int coinChangeRec(vector<int>& coins, int amount) {
         int res = coinChangeRec(coins, amount - coin);
         if (res != INT_MAX) {
             min_coins = min(min_coins, res + 1);
-        }
+        } 
     }
 
     return min_coins;

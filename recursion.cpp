@@ -74,22 +74,112 @@
 //  function(4,4);
 // }
 
-//we have to use the backtracking for solve this problem.
+// we have to use the backtracking for solve this problem.
 
- #include<iostream>
-   using namespace std;
-    void function(int i,int n){
-        if(i==0){
-          return ;
-           }
-         
-          function(i-1,n);
-          cout<<i<<endl;
-            }
+//  #include<iostream>
+//    using namespace std;
+//     void function(int i,int n){
+//         if(i==0){
+//           return ;
+//            }
 
-      int main(){
-    int n=4;
-    function(4,4);
+//           function(i-1,n);
+//           cout<<i<<endl;
+//             }
+
+//       int main(){
+//     int n=4;
+//     function(4,4);
+
+//     return 0;
+//       }
+// 5// fuctionl recusion;
+// #include<iostream>
+// using namespace std;
+// int function(int n){
+//     if(n==0){
+//         return 0;
+
+//     }
+//     return n+function(n-1);
+// }
+
+// int main(){
+//  int n=4;
+//   int sum=  function(n);
+//   cout<<"the sum is :"<<sum<<endl;
+
+//     return 0;
+// }
+
+// factorial of a number
+// #include<iostream>
+// using namespace std;
+// int factorial(int n){
+//     if(n==1){
+//         return 1;
+//     }
+//     return n*factorial(n-1);
+// }
+// int main(){
+//     int n=7;
+
+// cout<<factorial(n);
+//     return 0;
+// }
+
+//<--- solve the array reverse question using the recusrsion.
+
+// #include <iostream>
+// using namespace std;
+
+// void function(int arr[],int l,int n){
+//            if(l>=n){
+//             return ;
+//            }
+//            swap(arr[l],arr[n-l]);
+//            function(arr,l+1,n);
+// }
+// int main()
+// {
+//     int n=6;
+//     int arr[6]={1,2,3,4,5,6};
+
+//     function(arr,0,n);
+
+//     for (int i = 0; i <n; i++)
+//     {
+//         cout<<arr[i]<<" ";
+//     }
+
+//     return 0;
+// }
+
+//<--- check whether the given string is palindrome or not using the recursion functinn;
+
+#include <iostream>
+using namespace std;
+
+bool function(string &s1, int l, int r)
+{
+    if (l >= r)
+    {
+        return true;
+    }
+    if (s1[l] == s1[r])
+    {
+          return  function(s1,l+1,r-1);
+    }
+    else
+    {
+       return 0;
+    }
+}
+int main()
+{
+    string s1 = "MADAM";
+    int n = s1.size();
+   cout<<function(s1, 0, n-1);
 
     return 0;
-      }
+}

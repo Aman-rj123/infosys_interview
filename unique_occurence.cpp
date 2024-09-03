@@ -27,6 +27,24 @@
 
       //  return 0;
 //} */
+/*
+Short Notes:
+Purpose: The code finds the unique element in a sorted array where every other element appears twice.
+
+Approach:
+
+Uses Binary Search to efficiently find the unique element.
+The array is divided into two halves by checking the middle element.
+If the middle index (mid) is even and the next element (arr[mid + 1]) is the same, the unique element must be in the right half.
+If mid is odd and the previous element (arr[mid - 1]) is the same, the unique element must be in the right half.
+Otherwise, it is in the left half.
+Time Complexity: O(log n) due to the binary search approach.
+
+Code:
+
+
+
+
 
 #include <iostream>
 using namespace std;
@@ -72,3 +90,5 @@ int main()
     cout << "the unique element is" << unique << endl;
     return 0;
 }
+
+*/
