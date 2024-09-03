@@ -168,18 +168,24 @@ bool function(string &s1, int l, int r)
     }
     if (s1[l] == s1[r])
     {
-          return  function(s1,l+1,r-1);
+        return function(s1, l + 1, r - 1);
     }
     else
     {
-       return 0;
+        return 0;
     }
 }
 int main()
 {
-    string s1 = "MADAM";
+    string s1 = "MADtDAM";
     int n = s1.size();
-   cout<<function(s1, 0, n-1);
+    //function(s1, 0, n - 1);
+    if(function(s1,0,n-1)){
+        cout<<"Give string is a  plindrone number"<<endl;
+    }
+    else{
+        cout<<"Give string is not a Prime number"<<endl;
+    }
 
     return 0;
 }
