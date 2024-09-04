@@ -177,14 +177,14 @@ bool function(string &s1, int l, int r)
 }
 int main()
 {
-    string s1 = "MADtDAM";
+    string s1 = "dMADtDAM";
     int n = s1.size();
     //function(s1, 0, n - 1);
     if(function(s1,0,n-1)){
-        cout<<"Give string is a  plindrone number"<<endl;
+        cout<<"Give string is a  plindrone string "<<endl;
     }
     else{
-        cout<<"Give string is not a Prime number"<<endl;
+        cout<<"Give string is not a palindrome String "<<endl;
     }
 
     return 0;
