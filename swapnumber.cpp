@@ -35,7 +35,7 @@
 
 //     return 0;
 // }
-
+/*swap two number using the third variable*/
 #include<iostream>
 using namespace std;
 int main(){
