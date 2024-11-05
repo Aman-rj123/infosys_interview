@@ -2,6 +2,12 @@
 using namespace std;
 int squareroot(int n)
 {
+    if(n<0){
+        return -1;
+    }
+    if(n==0){
+        return 0;
+    }
     int low = 1;
     int high = n;
     while (low <= high)
@@ -26,7 +32,12 @@ int main()
     cin >> n;
     int result = squareroot(n);
 
-    cout<<"The Square root of the number is :"<<result<<endl;
+    if(result != -1){
+        cout<<"the square root of the given number is :"<<result<<endl;
+    }
+    else{
+        cout<<"the give number is the negative number"<<endl;
+    }
 
     return 0;
 }
