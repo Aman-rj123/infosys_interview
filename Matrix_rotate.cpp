@@ -1,3 +1,4 @@
+/*https://www.geeksforgeeks.org/problems/rotate-by-90-degree0356/1*/
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -17,6 +18,13 @@ void rotate90Clockwise(vector<vector<int>>& matrix) {
 
     // Step 2: Reverse each row
     // This will complete the 90-degree clockwise rotation
+
+    /*
+    another way of the reverse.
+     for (int i = 0; i < n; i++) {
+        reverse(mat[i].begin(), mat[i].end());
+    }
+}*/
     for (int i = 0; i < n; i++) {
         int start = 0;
         int end = n - 1;
